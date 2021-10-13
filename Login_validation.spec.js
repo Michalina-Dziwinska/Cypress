@@ -1,5 +1,5 @@
 it('Not existing user', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
 	cy.get('[id="login-modal-button"]').click()
 	cy.get('[id="email"]').clear().type('ydk123@cuoly.com')
@@ -9,7 +9,7 @@ it('Not existing user', () => {
   })
 
   it('Wrong password', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
 	cy.get('[id="login-modal-button"]').click()
 	cy.get('[id="email"]').clear().type('jekir94599@stvbz.com')
