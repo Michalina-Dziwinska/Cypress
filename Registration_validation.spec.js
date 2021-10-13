@@ -1,5 +1,5 @@
 it('Email validation - without @', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
     cy.get('[id="register-modal-button"').click()
     cy.get('[id="email"]').clear().type('ydk999cuoly.com')
@@ -11,7 +11,7 @@ it('Email validation - without @', () => {
   })
 
   it('Email validation - without .', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
     cy.get('[id="register-modal-button"').click()
     cy.get('[id="email"]').clear().type('ydk999@cuolycom')
@@ -23,7 +23,7 @@ it('Email validation - without @', () => {
   })
 
   it('Password validation - too short', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
     cy.get('[id="register-modal-button"').click()
     cy.get('[id="email"]').clear().type('ydk999@cuoly.com')
@@ -35,7 +35,7 @@ it('Email validation - without @', () => {
   })
 
   it('Password validation - without number', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
     cy.get('[id="register-modal-button"').click()
     cy.get('[id="email"]').clear().type('ydk999@cuoly.com')
@@ -47,7 +47,7 @@ it('Email validation - without @', () => {
   })
 
   it('Password validation - without special char', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
     cy.get('[id="register-modal-button"').click()
     cy.get('[id="email"]').clear().type('ydk999@cuoly.com')
@@ -59,7 +59,7 @@ it('Email validation - without @', () => {
   })
 
   it('Password validation - without uppercase', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
     cy.get('[id="register-modal-button"').click()
     cy.get('[id="email"]').clear().type('ydk999@cuoly.com')
@@ -71,7 +71,7 @@ it('Email validation - without @', () => {
   })
 
   it('Password validation - without lowercase', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
     cy.get('[id="register-modal-button"').click()
     cy.get('[id="email"]').clear().type('ydk999@cuoly.com')
@@ -83,7 +83,7 @@ it('Email validation - without @', () => {
   })
 
   it('Confirm password validation - different confirm password', () => {
-    cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+    cy.visit("link")
     cy.wait(2000)
     cy.get('[id="register-modal-button"').click()
     cy.get('[id="email"]').clear().type('ydk999@cuoly.com')
