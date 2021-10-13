@@ -11,7 +11,7 @@ describe('Registration with email confirmation', () => {
   
 	it('sends confirmation code', () => {
 
-		cy.visit("https://husky-cognito.dvwf5uw58zw69.amplifyapp.com/")
+		cy.visit("link")
 		cy.wait(3000)
 		cy.get('[id="register-modal-button"]').click()
 		cy.get('[id="email"]').clear().type(userEmail)
